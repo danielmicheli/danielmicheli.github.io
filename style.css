@@ -723,4 +723,23 @@ nav .fas {
         align-items: center;
     }
 
+
+
+}
+
+    /* Desktop: mostra versione dettagliata, nasconde minimal */
+@media (min-width: 768px) {
+  .about-text-desktop { display: block; }
+  .about-text-mobile { display: none !important; }
+}
+
+/* Mobile: nasconde dettagliata, mostra minimal */
+@media (max-width: 767px) {
+  .about-text-desktop { display: none !important; }
+  .about-text-mobile { 
+    display: block !important; 
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
 }

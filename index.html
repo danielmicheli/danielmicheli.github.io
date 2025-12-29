@@ -1,295 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daniel.Io</title>
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-...your-sha512-code-here..." crossorigin="anonymous">
-</head>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-...your-sha512-code-here..."
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
+  <body>
     <div id="header">
-        <div class="herobox">
-            <nav>
-                <div class="logo"><a href="#header"><span>D</span>M</a></div>
-                <ul id="sidemenu">
+      <div class="herobox">
+        <nav>
+          <div class="logo">
+            <a href="#header"><span>D</span>M</a>
+          </div>
+          <ul id="sidemenu">
+            <li><a href="#about" onclick="closemenu()">About me</a></li>
+            <li><a href="#portfolio" onclick="closemenu()">Work</a></li>
+            <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
 
-                    <li><a href="#about" onclick="closemenu()">About me</a></li>
-                    <li><a href="#portfolio" onclick="closemenu()">Work</a></li>
-                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-
-            </nav>
-
-            <div class="header-text">
-                <p>HI 👋, I'M </p>
-                <h1> <span>Daniel</span> Micheli <br>Web Developer</h1>
-                <p>BASED IN ROME</p>
-                <div class="icons">
-                    <div> <a href="https://github.com/danielmicheli" target="_blank"><i
-                                class="fab fa-github-square social"></i></a></div>
-                    <div> <a href="https://twitter.com/DanielMicheli9" target="_blank"><i
-                                class="fab fa-twitter-square social"></i></a></div>
-                    <div><a href="https://www.linkedin.com/in/daniel-micheli-0715252ab/" target="_blank"><i
-                                class="fab fa-linkedin social"></i></a></div>
-                    <div><a href="https://drive.google.com/u/0/uc?id=1zQGgsr5qmbWUrBHCNsFGMQheQIKFgRwc&export=download"
-                            class="downloadButton"><span>Resume</span></a></div>
-                </div>
+        <div class="header-text">
+          <p>HI 👋, I'M</p>
+          <h1><span>Daniel</span> Micheli <br />Developer</h1>
+          <p>BASED IN ROME</p>
+          <div class="icons">
+            <div>
+              <a href="https://github.com/danielmicheli" target="_blank"
+                ><i class="fab fa-github-square social"></i
+              ></a>
             </div>
-
+            <div>
+              <a href="https://twitter.com/DanielMicheli9" target="_blank"
+                ><i class="fab fa-square-x-twitter"></i
+              ></a>
+            </div>
+            <div>
+              <a
+                href="https://www.linkedin.com/in/daniel-micheli-0715252ab/"
+                target="_blank"
+                ><i class="fab fa-linkedin social"></i
+              ></a>
+            </div>
+            <div>
+              <a
+                href="https://drive.google.com/u/0/uc?id=1zQGgsr5qmbWUrBHCNsFGMQheQIKFgRwc&export=download"
+                class="downloadButton"
+                ><span>Resume</span></a
+              >
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- -------about------------  -->
 
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user.png">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p> Ho da sempre avuto la passione per il mondo tech. Sono il cosiddetto “nerd” della famiglia, il
-                        classico nipote/figlio/cugino che viene interpellato per qualsiasi problema di natura
-                        tecnologica. Il mio primo approccio con il mondo web è stato tramite la gestione di piccole
-                        pagine Facebook e la creazione di siti/blog su Wordpress. Dopo la scuola superiore ho intrapreso
-                        un corso “full stack-development” con
-                        Labfortraining una scuola di Roma. Durante il corso ho compreso ancora di più quanto ami questo
-                        mondo e il perchè volessi parteciparvi in prima linea. Essendo un mondo in continua evoluzione
-                        non vedo l’ora di continuare a crescere ed apprendere nuove skill.</p>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <div class="about-text-desktop">
+            <h2>Hello World!</h2>
+            
+            <p>
+              <strong>Sono il classico nerd da copertina e divano: appassionato di videogiochi, cinema e di tutto ciò che ha un cavo (cavo?! Meglio wireless... sto invecchiando anche io!) o un chip. 
+            </p>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+            <p>
+              La mia passione per la tecnologia è nata presto — ero il “tecnico
+              ufficiale” della famiglia, quello che chiamavano per “far
+              ripartire il Wi-Fi” o sistemare il PC di turno. Eh sì, se te lo stai chiedendo: anche massimo esperto del temibile 
+              <strong>SPID</strong>.
+            </p>
 
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Front-end</span><br> HTML e CSS - JavaScript ed ECMAScript 6 - Angular</li>
-                            <li><span>Back-end</span><br>Mysql - Java - Spring</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2023</span><br>Corso Full-Stak presso <a href="https://www.labfortraining.it/"
-                                    target="_blank">LABFORTRAINING</a> </li>
-                            <li><span>2011 - 2016</span><br>Diploma Ragioniere Programmatore presso <a
-                                    href="https://www.iismarconi.edu.it/" target="_blank">IIS Marconi</a> </li>
+            <p>
+              Ho iniziato smanettando con pagine Facebook e piccoli blog su
+              <strong>WordPress</strong>, e da lì ho scoperto quanto mi
+              divertisse costruire cose sul web.
+            </p>
 
-                        </ul>
-                    </div>
-                </div>
+            <p>
+              Dopo il diploma ho frequentato un corso di
+              <strong>full stack development</strong> con Labfoweb, una scuola di
+              Roma, e da quel momento non mi sono più fermato. Ogni progetto è
+              un’occasione per imparare qualcosa di nuovo — perché nel mondo
+              tech non si smette mai davvero di crescere.
+            </p>
+
+            <p>
+              E se anche tu nel tuo tempo libero ti ritrovi a guardare video su
+              <strong>YouTube</strong> o leggere <strong>The Verge</strong> per
+              restare aggiornato,
+              <strong>possiamo rimanere in contatto su X</strong> — magari ci
+              scambiamo opinioni sulle ultime novità tech.
+            </p>
             </div>
+
+            <div class="about-text-mobile">
+                Hello World!
+
+Sono il classico nerd da copertina e divano: videogiochi, cinema e tutto ciò che ha un cavo (cavo?! Meglio wireless... sto invecchiando!) o un chip.
+
+Ero il tecnico ufficiale di famiglia: “Wi-Fi morto”, PC bloccati, e sì — anche massimo esperto SPID.
+
+Ho iniziato con Facebook e blog WordPress, poi corso full stack a Labfortraining (Roma). Da lì non mi fermo più: ogni progetto = nuova skill.
+
+Se anche tu sei su YouTube/The Verge per le tech news, scrivimi su X — commentiamo insieme le novità!
+
+            </div>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Front-end</span><br />
+                  Svelte - Angular - Flutter
+                </li>
+                <li><span>Back-end</span><br />Postgresql - Java</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2023</span><br />Corso Full-Stak presso
+                  <a href="https://www.labfortraining.it/" target="_blank"
+                    >LABFORWEB</a
+                  >
+                </li>
+                <li>
+                  <span>2011 - 2016</span><br />Diploma Ragioniere Programmatore
+                  presso
+                  <a href="https://www.iismarconi.edu.it/" target="_blank"
+                    >IIS Marconi</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- -------- portfolio-------->
     <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/angular.png">
-                    <div class="layer">
-                        <h3>Progetto Angular - sito di streaming</h3>
-                        <p>Creazione di un sito di streaming di film e serie tv con il framework Angular </p>
-                        <a href="https://github.com/danielmicheli/LabTV" target="_blank"><i
-                                class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work2.png">
-                    <div class="layer">
-                        <h3>Spring - creazione API per sito di streaming</h3>
-                        <p>Creazione di API che restituiscono una risposta in formato JSON. Le API sono state realizzate
-                            in Java e interagiscono con i dati tramite un db Mysql</p>
-                        <a href="https://github.com/danielmicheli/LabTv-Api" target="_blank"><i
-                                class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-
-
-                <div class="work">
-                    <img src="images/work3.png">
-                    <div class="layer">
-                        <h3>Prossimamente...</h3>
-                        <p>Seguimi su i miei profili per rimanere aggiornato su nuovi progetti. </p>
-                        <a href="https://github.com/danielmicheli" target="_blank"><i
-                                class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <!-- <a href="#" class="btn">See more</a> -->
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/angular.png" />
+            <div class="layer">
+              <h3>Progetto Angular - sito di streaming</h3>
+              <p>
+                Creazione di un sito di streaming di film e serie tv con il
+                framework Angular
+              </p>
+              <a href="https://github.com/danielmicheli/LabTV" target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
             </div>
+          </div>
+          <div class="work">
+            <img src="images/work2.png" />
+            <div class="layer">
+              <h3>Spring - creazione API per sito di streaming</h3>
+              <p>
+                Creazione di API che restituiscono una risposta in formato JSON.
+                Le API sono state realizzate in Java e interagiscono con i dati
+                tramite un db Mysql
+              </p>
+              <a
+                href="https://github.com/danielmicheli/LabTv-Api"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/work3.png" />
+            <div class="layer">
+              <h3>Prossimamente...</h3>
+              <p>
+                Seguimi su i miei profili per rimanere aggiornato su nuovi
+                progetti.
+              </p>
+              <a href="https://github.com/danielmicheli" target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <!-- <a href="#" class="btn">See more</a> -->
         </div>
-
+      </div>
     </div>
-
 
     <!-- -------contact------------  -->
 
     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p> <a href="mailto:Danielmicheli@outlook.it"><i
-                                class="fas fa-paper-plane"></i>Danielmicheli@outlook.it</a></p>
-                    <div class="social-icons">
-                        <a href="https://github.com/danielmicheli" target="_blank"><i
-                                class="fab fa-github-square social"></i></a>
-                        <a href="https://twitter.com/DanielMicheli9" target="_blank"><i
-                                class="fab fa-twitter-square social"></i></a>
-                        <a href="https://www.linkedin.com/in/daniel-micheli-0715252ab/" target="_blank"><i
-                                class="fab fa-linkedin social"></i></a>
-
-                    </div>
-                    <a href="https://drive.google.com/u/0/uc?id=1zQGgsr5qmbWUrBHCNsFGMQheQIKFgRwc&export=download"
-                        class="btn btn2">Download CV</a>
-
-                </div>
-                <div class="contact-right">
-                    <form id="contact-form" action="https://formspree.io/f/xdkonowv" method="POST">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="message" rows="6" placeholder="Your message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <a href="mailto:Danielmicheli@outlook.it"
+                ><i class="fas fa-paper-plane"></i>Danielmicheli@outlook.it</a
+              >
+            </p>
+            <div class="social-icons">
+              <a href="https://github.com/danielmicheli" target="_blank"
+                ><i class="fab fa-github-square social"></i
+              ></a>
+              <a href="https://twitter.com/DanielMicheli9" target="_blank"
+                ><i class="fab fa-square-x-twitter"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/daniel-micheli-0715252ab/"
+                target="_blank"
+                ><i class="fab fa-linkedin social"></i
+              ></a>
             </div>
+            <a
+              href="https://drive.google.com/u/0/uc?id=1zQGgsr5qmbWUrBHCNsFGMQheQIKFgRwc&export=download"
+              class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form
+              id="contact-form"
+              action="https://formspree.io/f/xdkonowv"
+              method="POST"
+            >
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Your message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
-
-
+      </div>
     </div>
 
     <div class="copyright">
-        <p>Copyright Daniel</p>
+      <p>Copyright © Daniel</p>
     </div>
 
     <div id="scrollToTopBtn" class="hidden">
-        <div onclick="scrollToTop()"></div>
+      <div onclick="scrollToTop()"></div>
     </div>
 
-
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+      document.addEventListener("DOMContentLoaded", function () {
+        var scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
-            window.addEventListener("scroll", function () {
-                if (window.scrollY > 50) {
-                    scrollToTopBtn.classList.add("show");
-                    scrollToTopBtn.classList.remove("hidden");
-                } else {
-                    scrollToTopBtn.classList.remove("show");
-                    scrollToTopBtn.classList.add("hidden");
-                }
-            });
-
-            scrollToTopBtn.addEventListener("click", function () {
-                scrollToTop();
-            });
-
-            window.addEventListener("resize", gestisciCambiamentoViewport);
-
-            gestisciCambiamentoViewport();
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 50) {
+            scrollToTopBtn.classList.add("show");
+            scrollToTopBtn.classList.remove("hidden");
+          } else {
+            scrollToTopBtn.classList.remove("show");
+            scrollToTopBtn.classList.add("hidden");
+          }
         });
 
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
+        scrollToTopBtn.addEventListener("click", function () {
+          scrollToTop();
+        });
 
-        }
+        window.addEventListener("resize", gestisciCambiamentoViewport);
 
-        function gestisciCambiamentoViewport() {
-            var larghezzaViewport = window.innerWidth || document.documentElement.clientWidth;
-            var sidemenu = document.getElementById("sidemenu");
+        gestisciCambiamentoViewport();
+      });
 
-            if (larghezzaViewport >= 600) {
-                sidemenu.style.right = "-100vh";
-                sidemenu.style.height = "100%";
-                sidemenu.style.width = "";
-            }
-        }
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
 
-    </script>
-
-    <script>
-
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
-
-
-    <script>
+      function gestisciCambiamentoViewport() {
+        var larghezzaViewport =
+          window.innerWidth || document.documentElement.clientWidth;
         var sidemenu = document.getElementById("sidemenu");
 
-        function openmenu() {
-            sidemenu.style.right = "0";
-            sidemenu.style.width = "100%";
-            sidemenu.style.height = "100vh";
+        if (larghezzaViewport >= 600) {
+          sidemenu.style.right = "-100vh";
+          sidemenu.style.height = "100%";
+          sidemenu.style.width = "";
         }
-
-        function closemenu() {
-            sidemenu.style.right = "-100vh";
-            sidemenu.style.height = "100%";
-            sidemenu.style.width = "";
-        }
+      }
     </script>
 
     <script>
-        document.getElementById("contact-form").addEventListener("submit", function (e) {
-            e.preventDefault();
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
 
-            const form = e.target;
-            const formData = new FormData(form);
-            const msg = document.getElementById("msg");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
 
-            fetch(form.action, {
-                method: form.method,
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            }).then(response => {
-                if (response.ok) {
-                    msg.innerHTML = "Messaggio inviato con successo!";
-                    form.reset();
-                } else {
-                    response.json().then(data => {
-                        if (Object.hasOwn(data, 'errors')) {
-                            msg.innerHTML = data["errors"].map(error => error["message"]).join(", ");
-                        } else {
-                            msg.innerHTML = "Ops! Qualcosa è andato storto...riprova!";
-                        }
-                    });
-                }
-            }).catch(error => {
-                msg.innerHTML = "Ops! Qualcosa è andato storto...riprova!";
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+        sidemenu.style.width = "100%";
+        sidemenu.style.height = "100vh";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-100vh";
+        sidemenu.style.height = "100%";
+        sidemenu.style.width = "";
+      }
+    </script>
+
+    <script>
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const form = e.target;
+          const formData = new FormData(form);
+          const msg = document.getElementById("msg");
+
+          fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: {
+              Accept: "application/json",
+            },
+          })
+            .then((response) => {
+              if (response.ok) {
+                msg.innerHTML = "Messaggio inviato con successo!";
+                form.reset();
+              } else {
+                response.json().then((data) => {
+                  if (Object.hasOwn(data, "errors")) {
+                    msg.innerHTML = data["errors"]
+                      .map((error) => error["message"])
+                      .join(", ");
+                  } else {
+                    msg.innerHTML = "Ops! Qualcosa è andato storto...riprova!";
+                  }
+                });
+              }
+            })
+            .catch((error) => {
+              msg.innerHTML = "Ops! Qualcosa è andato storto...riprova!";
             });
         });
     </script>
-
 
     <!-- <script>
         Old script per il collegamento con google Sheet
@@ -326,8 +428,5 @@
             reloadPageIfViewportStartsSmall();
         });
     </script> -->
-
-
-</body>
-
+  </body>
 </html>
